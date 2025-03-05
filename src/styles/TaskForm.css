@@ -1,0 +1,36 @@
+.task-form {
+  display: flex;
+  gap: 0.8rem; /* Increased gap for better spacing */
+  margin-bottom: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Rounded corners */
+  outline: none;
+  transition: border 0.3s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+}
+
+.task-form input:focus {
+  border: 1px solid #4caf50; /* Green border on focus */
+}
+
+.task-form button {
+  padding: 0.7rem 1.2rem;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+}
+
+.task-form button:hover {
+  background: #388e3c; /* Darker green on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}

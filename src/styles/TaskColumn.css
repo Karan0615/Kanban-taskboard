@@ -1,0 +1,25 @@
+.column {
+  width: 30%;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  transition: box-shadow 0.3s ease-in-out;
+  background:rgb(229, 203, 252);
+}
+
+
+
+.column:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.task-list {
+  min-height: 300px;
+  padding: 1rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

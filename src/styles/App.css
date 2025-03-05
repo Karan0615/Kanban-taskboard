@@ -1,0 +1,17 @@
+.board {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+  min-height: 80vh;
+  background-color: #f4f4f4;
+}
+.task-list {
+  min-height: 300px; /* Important for Droppable to work */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body {
+  background-color:rgba(135, 29, 152, 0.67);
+}

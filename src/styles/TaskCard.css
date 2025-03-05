@@ -1,0 +1,54 @@
+.task-card {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  transition: box-shadow 0.3s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* For dot positioning */
+}
+
+.task-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.task-status-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.task-card.to-do .task-status-dot {
+  background: Red; /* Red for To Do */
+}
+
+.task-card.in-process .task-status-dot {
+  background: yellow; /* Yellow for In Process */
+}
+
+.task-card.done .task-status-dot {
+  background: green; /* Green for Done */
+}
+
+.delete-btn {
+  padding: 0.5rem;
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  align-self: flex-end;
+  transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #e63946; /* Darker red on hover */
+}
