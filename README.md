@@ -1,12 +1,60 @@
-# React + Vite
+Kanban Taskboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+OVERVIEW
+This project is a Kanban Taskboard built with Vite + React that helps users manage tasks using a drag-and-drop interface. The board consists of three columns:
+To-Do: Tasks that need to be completed.
+In-Process: Tasks currently in progress.
+Done: Completed tasks.
 
-Currently, two official plugins are available:
+FEATURES
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Add new tasks with title and description.
+Drag and drop tasks between columns.
+Delete tasks with a red button at the bottom-right corner of each task card.
+Modern minimalist user interface.
 
-## Expanding the ESLint configuration
+TECH STACK
+React.js
+Vite
+React Beautiful DnD
+UUID for unique task IDs
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+HOW TO RUN PROJECT LOCALLY
+
+Prerequisites
+Make sure you have the following installed:
+1)Node.js
+2)npm
+
+STEPS
+
+1)Clone the Repository:
+git clone https://github.com/karan0615/kanban-taskboard.git
+
+2)Navigate to the Project Folder:
+
+cd kanban-taskboard
+
+3)Install Dependencies:
+
+npm install
+
+4)Run the Development Server:
+
+npm run dev
+
+Open the App in Your Browser:
+
+http://localhost:5173/
+
+Folder Structure
+
+📁 kanban-taskboard
+│
+├─ public/               # HTML Files
+├─ src/                  # React Components and CSS
+│   ├─ components/       # Navbar, TaskCard, TaskColumn, TaskForm
+│   ├─ styles/           # CSS Files
+│   ├─ App.jsx           # Main App Component
+│   └─ main.jsx          # App Entry Point
+└─ package.json          # Dependencies
